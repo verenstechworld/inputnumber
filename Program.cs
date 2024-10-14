@@ -66,8 +66,8 @@ class Program
                 Console.WriteLine("4. Divide");
                 Console.Write("Enter your choice (1-4): ");
                 string operation = Console.ReadLine();
-
                 double result = 0;
+
                 switch (operation)
                 {
                     case "1":
