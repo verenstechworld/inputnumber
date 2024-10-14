@@ -4,6 +4,11 @@ class OddToEvenConverter
 {
     static void Main(string[] args)
     {
+        RunConverter();
+    }
+
+    static void RunConverter()
+    {
         while (true)
         {
             Console.Clear();
@@ -30,10 +35,6 @@ class OddToEvenConverter
 
     static int ConvertOddToEven(int num)
     {
-        if (num % 2 != 0)
-        {
-            return num + 1;
-        }
-        return num;
+        return (num % 2 != 0) ? num + 1 : num; // Using a ternary operator for conciseness
     }
 }
